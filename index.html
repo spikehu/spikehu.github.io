@@ -201,10 +201,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-04-20 18:14:35 / Modified: 18:15:01" itemprop="dateCreated datePublished" datetime="2021-04-20T18:14:35+08:00">2021-04-20</time>
+      <time title="Created: 2021-04-20 18:14:35" itemprop="dateCreated datePublished" datetime="2021-04-20T18:14:35+08:00">2021-04-20</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-21 00:11:17" itemprop="dateModified" datetime="2021-04-21T00:11:17+08:00">2021-04-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -225,7 +231,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <p>待写</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/20/np.sum/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -274,10 +288,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-04-20 16:11:43 / Modified: 16:26:01" itemprop="dateCreated datePublished" datetime="2021-04-20T16:11:43+08:00">2021-04-20</time>
+      <time title="Created: 2021-04-20 16:11:43" itemprop="dateCreated datePublished" datetime="2021-04-20T16:11:43+08:00">2021-04-20</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-21 00:14:47" itemprop="dateModified" datetime="2021-04-21T00:14:47+08:00">2021-04-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -298,69 +318,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h1><p>字典是另一种可变容器模型，且可存储任意类型对象。<br>字典的每个键值 key=&gt;value 对用冒号 : 分割，每个对之间用逗号(,)分割，整个字典包括在花括号 {} 中 ,格式如下所示：</p>
-<pre><code>d = &#123;key1 : value1, key2 : value2, key3 : value3 &#125;
-</code></pre>
-<p>键必须是唯一的，但值则不必。<br>值可以取任何数据类型，但键必须是不可变的，如字符串，数字。</p>
-<h2 id="一个简单的字典实例："><a href="#一个简单的字典实例：" class="headerlink" title="一个简单的字典实例："></a>一个简单的字典实例：</h2><pre><code>dict = &#123;&#39;name&#39;: &#39;runoob&#39;, &#39;likes&#39;: 123, &#39;url&#39;: &#39;www.runoob.com&#39;&#125;
-</code></pre>
-<p>或者</p>
-<pre><code>dict = &#123;&#39;name&#39;: &#39;runoob&#39;, &#39;likes&#39;: 123, &#39;url&#39;: &#39;www.runoob.com&#39;&#125;
-</code></pre>
-<h2 id="访问字典里的值"><a href="#访问字典里的值" class="headerlink" title="访问字典里的值"></a>访问字典里的值</h2><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dict &#x3D; &#123;&#39;Name&#39;: &#39;Runoob&#39;, &#39;Age&#39;: 7, &#39;Class&#39;: &#39;First&#39;&#125;</span><br><span class="line"></span><br><span class="line">print (&quot;dict[&#39;Name&#39;]: &quot;, dict[&#39;Name&#39;])</span><br><span class="line">print (&quot;dict[&#39;Age&#39;]: &quot;, dict[&#39;Age&#39;])</span><br></pre></td></tr></table></figure>
-</code></pre>
-<p>结果<br>    <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">dict</span>[<span class="string">&#x27;Name&#x27;</span>]:  Runoob</span><br><span class="line"><span class="built_in">dict</span>[<span class="string">&#x27;Age&#x27;</span>]:  <span class="number">7</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="删除字典元素"><a href="#删除字典元素" class="headerlink" title="删除字典元素"></a>删除字典元素</h2><pre><code><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">dict</span> = &#123;<span class="string">&#x27;Name&#x27;</span>: <span class="string">&#x27;Runoob&#x27;</span>, <span class="string">&#x27;Age&#x27;</span>: <span class="number">7</span>, <span class="string">&#x27;Class&#x27;</span>: <span class="string">&#x27;First&#x27;</span>&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">del</span> <span class="built_in">dict</span>[<span class="string">&#x27;Name&#x27;</span>] <span class="comment"># 删除键 &#x27;Name&#x27;</span></span><br><span class="line"><span class="built_in">dict</span>.clear()     <span class="comment"># 清空字典</span></span><br><span class="line"><span class="keyword">del</span> <span class="built_in">dict</span>         <span class="comment"># 删除字典</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;dict[&#x27;Age&#x27;]: &quot;</span>, <span class="built_in">dict</span>[<span class="string">&#x27;Age&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;dict[&#x27;School&#x27;]: &quot;</span>, <span class="built_in">dict</span>[<span class="string">&#x27;School&#x27;</span>])</span><br></pre></td></tr></table></figure>
-</code></pre>
-<h2 id="字典内置函数-amp-方法"><a href="#字典内置函数-amp-方法" class="headerlink" title="字典内置函数&amp;方法"></a>字典内置函数&amp;方法</h2><p>1    len(dict)<br>计算字典元素个数，即键的总数。    </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dict = {‘Name’: ‘Runoob’, ‘Age’: 7, ‘Class’: ‘First’}<br>len(dict)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>2 str(dict)<br>输出字典，以可打印的字符串表示。    </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dict = {‘Name’: ‘Runoob’, ‘Age’: 7, ‘Class’: ‘First’}<br>str(dict)<br>“{‘Name’: ‘Runoob’, ‘Class’: ‘First’, ‘Age’: 7}”</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>3    type(variable)<br>返回输入的变量类型，如果变量是字典就返回字典类型。    </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dict = {‘Name’: ‘Runoob’, ‘Age’: 7, ‘Class’: ‘First’}<br>type(dict)<br>&lt;class ‘dict’&gt;</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="字典内置方法"><a href="#字典内置方法" class="headerlink" title="字典内置方法"></a>字典内置方法</h2><pre><code>1    radiansdict.clear()
-</code></pre>
-<h3 id="删除字典内所有元素"><a href="#删除字典内所有元素" class="headerlink" title="删除字典内所有元素"></a>删除字典内所有元素</h3><pre><code>2    radiansdict.copy()
-</code></pre>
-<h3 id="返回一个字典的浅复制"><a href="#返回一个字典的浅复制" class="headerlink" title="返回一个字典的浅复制"></a>返回一个字典的浅复制</h3><pre><code>3    radiansdict.fromkeys()
-</code></pre>
-<h3 id="创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值"><a href="#创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值" class="headerlink" title="创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值"></a>创建一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值</h3><pre><code>4    radiansdict.get(key, default=None)
-</code></pre>
-<h3 id="返回指定键的值，如果键不在字典中返回-default-设置的默认值"><a href="#返回指定键的值，如果键不在字典中返回-default-设置的默认值" class="headerlink" title="返回指定键的值，如果键不在字典中返回 default 设置的默认值"></a>返回指定键的值，如果键不在字典中返回 default 设置的默认值</h3><pre><code>5    key in dict
-</code></pre>
-<h3 id="如果键在字典dict里返回true，否则返回false"><a href="#如果键在字典dict里返回true，否则返回false" class="headerlink" title="如果键在字典dict里返回true，否则返回false"></a>如果键在字典dict里返回true，否则返回false</h3><pre><code>6    radiansdict.items()
-</code></pre>
-<h3 id="以列表返回可遍历的-键-值-元组数组"><a href="#以列表返回可遍历的-键-值-元组数组" class="headerlink" title="以列表返回可遍历的(键, 值) 元组数组"></a>以列表返回可遍历的(键, 值) 元组数组</h3><pre><code>7    radiansdict.keys()
-</code></pre>
-<h3 id="返回一个迭代器，可以使用-list-来转换为列表"><a href="#返回一个迭代器，可以使用-list-来转换为列表" class="headerlink" title="返回一个迭代器，可以使用 list() 来转换为列表"></a>返回一个迭代器，可以使用 list() 来转换为列表</h3><pre><code>8    radiansdict.setdefault(key, default=None)
-</code></pre>
-<h3 id="和get-类似-但如果键不存在于字典中，将会添加键并将值设为default"><a href="#和get-类似-但如果键不存在于字典中，将会添加键并将值设为default" class="headerlink" title="和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default"></a>和get()类似, 但如果键不存在于字典中，将会添加键并将值设为default</h3><pre><code>9    radiansdict.update(dict2)
-</code></pre>
-<h3 id="把字典dict2的键-值对更新到dict里"><a href="#把字典dict2的键-值对更新到dict里" class="headerlink" title="把字典dict2的键/值对更新到dict里"></a>把字典dict2的键/值对更新到dict里</h3><pre><code>10    radiansdict.values()
-</code></pre>
-<h3 id="返回一个迭代器，可以使用-list-来转换为列表-1"><a href="#返回一个迭代器，可以使用-list-来转换为列表-1" class="headerlink" title="返回一个迭代器，可以使用 list() 来转换为列表"></a>返回一个迭代器，可以使用 list() 来转换为列表</h3><pre><code>11    pop(key[,default])
-</code></pre>
-<h3 id="删除字典给定键-key-所对应的值，返回值为被删除的值。key值必须给出。-否则，返回default值。"><a href="#删除字典给定键-key-所对应的值，返回值为被删除的值。key值必须给出。-否则，返回default值。" class="headerlink" title="删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。"></a>删除字典给定键 key 所对应的值，返回值为被删除的值。key值必须给出。 否则，返回default值。</h3><pre><code>12    popitem()
-</code></pre>
-<h3 id="随机返回并删除字典中的最后一对键和值。"><a href="#随机返回并删除字典中的最后一对键和值。" class="headerlink" title="随机返回并删除字典中的最后一对键和值。"></a>随机返回并删除字典中的最后一对键和值。</h3>
+          <p>d = {key1 : value1, key2 : value2, key3 : value3 }</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/20/python%E5%AD%97%E5%85%B8/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -409,10 +375,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-04-20 14:55:21 / Modified: 15:11:07" itemprop="dateCreated datePublished" datetime="2021-04-20T14:55:21+08:00">2021-04-20</time>
+      <time title="Created: 2021-04-20 14:55:21" itemprop="dateCreated datePublished" datetime="2021-04-20T14:55:21+08:00">2021-04-20</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-21 00:18:51" itemprop="dateModified" datetime="2021-04-21T00:18:51+08:00">2021-04-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -434,36 +406,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>依据原array生成新的维度的array。</p>
-<h1 id="reshape-self-shape-order-’C’"><a href="#reshape-self-shape-order-’C’" class="headerlink" title="reshape(self, shape, order=’C’)"></a>reshape(self, shape, order=’C’)</h1><h1 id="或np-reshape-a-newshape-order-’C’"><a href="#或np-reshape-a-newshape-order-’C’" class="headerlink" title="或np.reshape(a, newshape, order=’C’)"></a>或np.reshape(a, newshape, order=’C’)</h1><h2 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h2><pre><code>Gives a new shape to an array without changing its data.
-
-Parameters
-----------
-a : array_like
-    Array to be reshaped.
-newshape : int or tuple of ints
-    The new shape should be compatible with the original shape. If
-    an integer, then the result will be a 1-D array of that length.
-    One shape dimension can be -1. In this case, the value is
-    inferred from the length of the array and remaining dimensions.
-order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
-    Read the elements of `a` using this index order, and place the
-    elements into the reshaped array using this index order.  &#39;C&#39;
-    means to read / write the elements using C-like index order,
-    with the last axis index changing fastest, back to the first
-    axis index changing slowest. &#39;F&#39; means to read / write the
-    elements using Fortran-like index order, with the first index
-    changing fastest, and the last index changing slowest. Note that
-    the &#39;C&#39; and &#39;F&#39; options take no account of the memory layout of
-    the underlying array, and only refer to the order of indexing.
-    &#39;A&#39; means to read / write the elements in Fortran-like index
-    order if `a` is Fortran *contiguous* in memory, C-like order
-    otherwise.
-</code></pre>
-<p>order一般默认是C语言形式，就是行优先。</p>
-<h2 id="example"><a href="#example" class="headerlink" title="example"></a>example</h2><pre><code><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]])</span><br><span class="line">   &gt;&gt;&gt; np.reshape(a, <span class="number">6</span>)</span><br><span class="line">   array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line">   &gt;&gt;&gt; np.reshape(a, <span class="number">6</span>, order=<span class="string">&#x27;F&#x27;</span>)</span><br><span class="line">   array([<span class="number">1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">3</span>, <span class="number">6</span>])</span><br><span class="line"></span><br><span class="line">   &gt;&gt;&gt; np.reshape(a, (<span class="number">3</span>,-<span class="number">1</span>))       <span class="comment"># the unspecified value is inferred to be 2</span></span><br><span class="line">   array([[<span class="number">1</span>, <span class="number">2</span>],</span><br><span class="line">          [<span class="number">3</span>, <span class="number">4</span>],</span><br><span class="line">          [<span class="number">5</span>, <span class="number">6</span>]])</span><br></pre></td></tr></table></figure>
-如果传入的shape()有一个参数是-1，就是自动计算该维的值是多少，该例子就是2*3的数组按3*n的形式reshape,n的值算出来为1.
-</code></pre>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/20/np.reshape/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -512,10 +462,16 @@ order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-04-20 14:18:34 / Modified: 14:20:48" itemprop="dateCreated datePublished" datetime="2021-04-20T14:18:34+08:00">2021-04-20</time>
+      <time title="Created: 2021-04-20 14:18:34" itemprop="dateCreated datePublished" datetime="2021-04-20T14:18:34+08:00">2021-04-20</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-21 00:18:41" itemprop="dateModified" datetime="2021-04-21T00:18:41+08:00">2021-04-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -536,14 +492,15 @@ order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>np.log</p>
-<pre><code>np.log
-</code></pre>
-<p>以e为底</p>
-<pre><code>np.log10
-</code></pre>
-<p>以10为底</p>
-
+          <p>np.log说明</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/20/np.log/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -592,10 +549,16 @@ order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-04-18 16:48:12 / Modified: 17:10:53" itemprop="dateCreated datePublished" datetime="2021-04-18T16:48:12+08:00">2021-04-18</time>
+      <time title="Created: 2021-04-18 16:48:12" itemprop="dateCreated datePublished" datetime="2021-04-18T16:48:12+08:00">2021-04-18</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-21 00:24:45" itemprop="dateModified" datetime="2021-04-21T00:24:45+08:00">2021-04-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -616,11 +579,15 @@ order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="一些命令"><a href="#一些命令" class="headerlink" title="一些命令"></a>一些命令</h1><pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">heox -g 重新生成</span><br><span class="line">hexo s -p 5555 在localhost:5555 本地访问博客</span><br></pre></td></tr></table></figure>
-</code></pre>
-<h1 id="部署的一些步骤"><a href="#部署的一些步骤" class="headerlink" title="部署的一些步骤"></a>部署的一些步骤</h1><pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo -g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-</code></pre>
-
+          <p>hexo的一些使用命令</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/18/hexo/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -669,10 +636,16 @@ order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-04-18 16:21:48 / Modified: 16:44:46" itemprop="dateCreated datePublished" datetime="2021-04-18T16:21:48+08:00">2021-04-18</time>
+      <time title="Created: 2021-04-18 16:21:48" itemprop="dateCreated datePublished" datetime="2021-04-18T16:21:48+08:00">2021-04-18</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-21 00:18:59" itemprop="dateModified" datetime="2021-04-21T00:18:59+08:00">2021-04-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -693,57 +666,15 @@ order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="np-zeros-shape-dtype-None-order-’C’"><a href="#np-zeros-shape-dtype-None-order-’C’" class="headerlink" title="np.zeros(shape, dtype=None, order=’C’)"></a>np.zeros(shape, dtype=None, order=’C’)</h1><h2 id="官方注释"><a href="#官方注释" class="headerlink" title="官方注释"></a>官方注释</h2><p>返回给定维度和数据类型的数组，数据为0，默认类型是float</p>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><pre><code>zeros(shape, dtype=float, order=&#39;C&#39;)
-    Return a new array of given shape and type, filled with zeros.    
-    Parameters
-    ----------
-    shape : int or tuple of ints
-        Shape of the new array, e.g., ``(2, 3)`` or ``2``.
-    dtype : data-type, optional
-        The desired data-type for the array, e.g., `numpy.int8`.  Default is
-        `numpy.float64`.
-    order : &#123;&#39;C&#39;, &#39;F&#39;&#125;, optional, default: &#39;C&#39;
-        Whether to store multi-dimensional data in row-major
-        (C-style) or column-major (Fortran-style) order in
-        memory.
-</code></pre>
-<p>shape:指定数组的维度<br>dtype:数据类型，默认float<br>order:表示行优先还是列优先，默认是C行优先，F是列优先</p>
-<pre><code>    Returns
-    -------
-    out : ndarray
-        Array of zeros with the given shape, dtype, and order.
-
-    See Also
-    --------
-    zeros_like : Return an array of zeros with shape and type of input.
-    empty : Return a new uninitialized array.
-    ones : Return a new array setting values to one.
-    full : Return a new array of given shape filled with value.
-</code></pre>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><pre><code>    Examples
-    --------
-    &gt;&gt;&gt; np.zeros(5)
-    array([ 0.,  0.,  0.,  0.,  0.])
-
-    &gt;&gt;&gt; np.zeros((5,), dtype=int)
-    array([0, 0, 0, 0, 0])
-
-    &gt;&gt;&gt; np.zeros((2, 1))
-    array([[ 0.],
-           [ 0.]])
-
-    &gt;&gt;&gt; s = (2,2)
-    &gt;&gt;&gt; np.zeros(s)
-    array([[ 0.,  0.],
-           [ 0.,  0.]])
-
-    &gt;&gt;&gt; np.zeros((2,), dtype=[(&#39;x&#39;, &#39;i4&#39;), (&#39;y&#39;, &#39;i4&#39;)]) # custom dtype
-    array([(0, 0), (0, 0)],
-          dtype=[(&#39;x&#39;, &#39;&lt;i4&#39;), (&#39;y&#39;, &#39;&lt;i4&#39;)])
-</code></pre>
-<p>dtype=[(‘x’, ‘i4’), (‘y’, ‘float’)]表示可以用array[‘x]访问每组第一个元素，array[‘y’]就是第二个了。’i4’,表示每组第一个是int类型，’float’则是每组第二个是float类型。</p>
-
+          <p>np.zeros(shape, dtype=None, order='C')</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/18/np.zeros()/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -792,10 +723,16 @@ order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-04-18 15:32:39 / Modified: 16:01:44" itemprop="dateCreated datePublished" datetime="2021-04-18T15:32:39+08:00">2021-04-18</time>
+      <time title="Created: 2021-04-18 15:32:39" itemprop="dateCreated datePublished" datetime="2021-04-18T15:32:39+08:00">2021-04-18</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-21 00:11:21" itemprop="dateModified" datetime="2021-04-21T00:11:21+08:00">2021-04-21</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -816,39 +753,15 @@ order : &#123;&#39;C&#39;, &#39;F&#39;, &#39;A&#39;&#125;, optional
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="np-squeeze"><a href="#np-squeeze" class="headerlink" title="np.squeeze()"></a>np.squeeze()</h1><h2 id="官方注释"><a href="#官方注释" class="headerlink" title="官方注释"></a>官方注释</h2><p>np.squeeze(a,axis)是将数组中一维的维度去掉</p>
-<pre><code>Remove single-dimensional entries from the shape of an array.
-
-Parameters
-----------
-a : array_like
-    Input data.
-axis : None or int or tuple of ints, optional
-    .. versionadded:: 1.7.0
-
-    Selects a subset of the single-dimensional entries in the
-    shape. If an axis is selected with shape entry greater than
-    one, an error is raised.
-
-Returns
--------
-squeezed : ndarray
-    The input array, but with all or a subset of the
-    dimensions of length 1 removed. This is always `a` itself
-    or a view into `a`.
-
-Raises
-------
-ValueError
-    If `axis` is not `None`, and an axis being squeezed is not of length 1
-
-See Also
---------
-expand_dims : The inverse operation, adding singleton dimensions
-reshape : Insert, remove, and combine dimensions, and resize existing ones
-</code></pre>
-<p> 传入数组a,如果不指定去掉的维数（维数必须是1，否则报错），则去掉所有维度为1的维，返回的依然是一个数组。</p>
-<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Examples</span><br><span class="line">    --------</span><br><span class="line">    &gt;&gt;&gt; x = np.array([[[<span class="number">0</span>], [<span class="number">1</span>], [<span class="number">2</span>]]])</span><br><span class="line">    &gt;&gt;&gt; x.shape</span><br><span class="line">    (<span class="number">1</span>, <span class="number">3</span>, <span class="number">1</span>)</span><br><span class="line">    &gt;&gt;&gt; np.squeeze(x).shape</span><br><span class="line">    (<span class="number">3</span>,)</span><br><span class="line">    &gt;&gt;&gt; np.squeeze(x, axis=<span class="number">0</span>).shape</span><br><span class="line">    (<span class="number">3</span>, <span class="number">1</span>)</span><br><span class="line">    &gt;&gt;&gt; np.squeeze(x, axis=<span class="number">1</span>).shape</span><br><span class="line">    Traceback (most recent call last):</span><br><span class="line">    ...</span><br><span class="line">    ValueError: cannot select an axis to squeeze out which has size <span class="keyword">not</span> equal to one</span><br><span class="line">    &gt;&gt;&gt; np.squeeze(x, axis=<span class="number">2</span>).shape</span><br><span class="line">    (<span class="number">1</span>, <span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+          <p>np.squeeze()</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/18/python-np.squeeze()/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -905,7 +818,7 @@ reshape : Insert, remove, and combine dimensions, and resize existing ones
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-04-21 00:07:05" itemprop="dateModified" datetime="2021-04-21T00:07:05+08:00">2021-04-21</time>
+        <time title="Modified: 2021-04-21 00:21:22" itemprop="dateModified" datetime="2021-04-21T00:21:22+08:00">2021-04-21</time>
       </span>
 
   
@@ -918,12 +831,15 @@ reshape : Insert, remove, and combine dimensions, and resize existing ones
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>使用hexo写一些博客，之前用的gridea代码无法高亮，不知道为啥，后面在看要不要将之前的搬运过来。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;d\n&quot;</span>,<span class="string">&quot;hello hexo&quot;</span>);</span><br></pre></td></tr></table></figure>
-<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><p>一些内容</p>
-<h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>一些内容</p>
-<h3 id="标题三"><a href="#标题三" class="headerlink" title="标题三"></a>标题三</h3><p>一些内容</p>
-
+          <p>开始使用hexo</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -972,10 +888,16 @@ reshape : Insert, remove, and combine dimensions, and resize existing ones
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-04-17 11:54:12 / Modified: 11:59:28" itemprop="dateCreated datePublished" datetime="2021-04-17T11:54:12+08:00">2021-04-17</time>
+      <time title="Created: 2021-04-17 11:54:12" itemprop="dateCreated datePublished" datetime="2021-04-17T11:54:12+08:00">2021-04-17</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-04-21 00:08:55" itemprop="dateModified" datetime="2021-04-21T00:08:55+08:00">2021-04-21</time>
+      </span>
 
   
 </div>
@@ -987,20 +909,15 @@ reshape : Insert, remove, and combine dimensions, and resize existing ones
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h3 id="Hello-WORLD-胡家宾"><a href="#Hello-WORLD-胡家宾" class="headerlink" title="Hello WORLD 胡家宾"></a>Hello WORLD 胡家宾</h3><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <p>hello hexo</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/17/hello-world/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
